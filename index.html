@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>📝 Lista de Tarefas</h1>
+      <button id="toggle-theme">🌙</button>
+    </header>
+
+    <main>
+      <div class="input-group">
+        <input type="text" id="task-input" placeholder="Digite uma tarefa...">
+        <button id="add-task">Adicionar</button>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <div class="controls">
+        <p id="task-counter">0 pendentes • 0 concluídas</p>
+        <div class="filters">
+          <button data-filter="all" class="active">Todas</button>
+          <button data-filter="pending">Pendentes</button>
+          <button data-filter="done">Concluídas</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

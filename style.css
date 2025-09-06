@@ -1,0 +1,106 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --primary: #2575fc;
+  --secondary: #6a11cb;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #f4f4f4;
+  --primary: #bb86fc;
+  --secondary: #03dac6;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background: rgba(0,0,0,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.input-group {
+  display: flex;
+  margin: 20px 0;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.input-group button {
+  padding: 10px 15px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.05);
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#task-list li.done span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.filters button {
+  margin-left: 5px;
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.filters button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
